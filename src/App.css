@@ -33,7 +33,6 @@
   font-size: clamp(1.85rem, 3.4vw, 2.6rem);
   font-weight: 600;
   letter-spacing: -0.03em;
-  line-height: 1.15;
 }
 
 .section__lead {

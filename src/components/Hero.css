@@ -84,7 +84,7 @@
   font-size: clamp(3.2rem, 11vw, 6.4rem);
   font-weight: 700;
   letter-spacing: -0.045em;
-  line-height: 0.95;
+  line-height: 1.12;
   max-width: 12ch;
 }
 
@@ -93,7 +93,7 @@
   max-width: 28rem;
   font-size: clamp(1.15rem, 2.2vw, 1.4rem);
   font-weight: 500;
-  line-height: 1.35;
+  line-height: 1.4;
   color: var(--ink);
 }
 

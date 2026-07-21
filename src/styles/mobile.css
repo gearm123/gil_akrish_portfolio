@@ -99,9 +99,9 @@
 .site--mobile .experience__company-head {
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.35rem;
+  gap: 0.45rem;
   margin-bottom: 0.95rem;
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.9rem;
 }
 
 .site--mobile .experience__tenure {
@@ -151,7 +151,8 @@
 /* Side quests — horizontal snap gallery */
 .site--mobile .work {
   padding-inline: 0;
-  overflow: hidden;
+  overflow-x: clip;
+  overflow-y: visible;
 }
 
 .site--mobile .work .section__inner {

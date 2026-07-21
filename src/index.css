@@ -7,7 +7,7 @@
   --line: color-mix(in srgb, var(--ink) 12%, transparent);
   --accent: #0b6e6a;
   --accent-soft: color-mix(in srgb, var(--accent) 14%, transparent);
-  --font-display: 'Syne', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
   --font-body: 'Public Sans', system-ui, sans-serif;
   --max: 72rem;
   --gutter: clamp(1.25rem, 4vw, 2.5rem);
@@ -35,6 +35,33 @@ body {
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+/*
+ * Display headings — keep descenders (g, y, p) fully visible.
+ */
+:where(
+  h1,
+  h2,
+  h3,
+  h4,
+  .section__title,
+  .hero__name,
+  .hero__tagline,
+  .site-header__brand,
+  .site-header__drawer-nav a,
+  .experience__company-head h3,
+  .experience__role-head h4,
+  .education__head h3,
+  .education__degree,
+  .work__card h3,
+  .capabilities__item h3,
+  .research__thesis,
+  .research .section__title,
+  .approach .section__title
+) {
+  line-height: 1.35;
+  overflow: visible;
 }
 
 a {
