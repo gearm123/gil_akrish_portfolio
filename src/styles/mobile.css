@@ -1,0 +1,271 @@
+/**
+ * Mobile-only layout system.
+ * Scoped under .site--mobile so desktop styles stay untouched.
+ */
+
+.site--mobile {
+  --gutter: 1.15rem;
+  --section: 3.75rem;
+}
+
+.site--mobile .section__title {
+  font-size: clamp(1.7rem, 7.5vw, 2.15rem);
+  margin-bottom: 0.85rem;
+}
+
+.site--mobile .section__lead {
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+/* Hero */
+.site--mobile .hero {
+  min-height: auto;
+  align-items: start;
+  padding:
+    calc(1.5rem + env(safe-area-inset-top, 0px))
+    var(--gutter)
+    3rem;
+}
+
+.site--mobile .hero__content {
+  padding-top: 2.5rem;
+}
+
+.site--mobile .hero__kicker {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.75rem;
+}
+
+.site--mobile .hero__name {
+  font-size: clamp(2.85rem, 14vw, 3.6rem);
+  max-width: 8ch;
+  margin-bottom: 0.9rem;
+}
+
+.site--mobile .hero__tagline {
+  font-size: 1.12rem;
+  max-width: 22rem;
+}
+
+.site--mobile .hero__intro {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.site--mobile .hero__actions {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.65rem;
+}
+
+.site--mobile .hero__cta {
+  width: 100%;
+  min-height: 3.1rem;
+  border-radius: 0.85rem;
+  font-size: 1rem;
+}
+
+.site--mobile .hero__wash--a,
+.site--mobile .hero__wash--b {
+  filter: blur(36px);
+  opacity: 0.85;
+}
+
+/* Experience as soft panels */
+.site--mobile .experience__list {
+  gap: 1.15rem;
+  margin-top: 2rem;
+}
+
+.site--mobile .experience__company {
+  background: color-mix(in srgb, var(--paper) 80%, #fff);
+  border: 1px solid var(--line);
+  border-radius: 1.15rem;
+  padding: 1.15rem 1.05rem 1.2rem;
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--ink) 4%, transparent);
+}
+
+.site--mobile .experience__company-head {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  margin-bottom: 0.95rem;
+  padding-bottom: 0.75rem;
+}
+
+.site--mobile .experience__tenure {
+  display: inline-flex;
+  padding: 0.22rem 0.55rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.site--mobile .experience__roles {
+  gap: 1.15rem;
+}
+
+.site--mobile .experience__meta {
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.site--mobile .experience__bullets {
+  padding-inline-start: 1rem;
+  font-size: 0.94rem;
+}
+
+/* Education cards */
+.site--mobile .education__list {
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.site--mobile .education__item {
+  border: 1px solid var(--line);
+  border-radius: 1.15rem;
+  padding: 1.15rem 1.05rem;
+  background: color-mix(in srgb, var(--paper) 72%, #fff);
+  border-top-style: solid;
+}
+
+.site--mobile .education__head {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+
+/* Side quests — horizontal snap gallery */
+.site--mobile .work {
+  padding-inline: 0;
+  overflow: hidden;
+}
+
+.site--mobile .work .section__inner {
+  padding-inline: var(--gutter);
+}
+
+.site--mobile .work__grid {
+  display: flex;
+  gap: 0.85rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--gutter);
+  padding: 0.35rem var(--gutter) 0.75rem;
+  margin-inline: calc(var(--gutter) * -1);
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.site--mobile .work__grid::-webkit-scrollbar {
+  display: none;
+}
+
+.site--mobile .work__grid > li {
+  flex: 0 0 min(84vw, 20rem);
+  scroll-snap-align: start;
+}
+
+.site--mobile .work__card,
+.site--mobile .work__card--1,
+.site--mobile .work__card--2,
+.site--mobile .work__card--3 {
+  transform: none;
+  min-height: 17.5rem;
+  border-radius: 1.25rem;
+  padding: 1.2rem 1.1rem 1.15rem;
+}
+
+.site--mobile .work__more {
+  margin-inline: var(--gutter);
+  margin-top: 1.15rem;
+}
+
+/* Capabilities */
+.site--mobile .capabilities__list {
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+.site--mobile .capabilities__item {
+  border: 1px solid var(--line);
+  border-radius: 1.05rem;
+  padding: 1.05rem 1rem;
+  background: color-mix(in srgb, var(--paper) 70%, #fff);
+  border-top-style: solid;
+}
+
+.site--mobile .capabilities__item h3 {
+  font-size: 1.12rem;
+}
+
+/* Approach */
+.site--mobile .approach__inner {
+  grid-template-columns: 1fr;
+  gap: 1.15rem;
+}
+
+.site--mobile .approach__body {
+  font-size: 1.08rem;
+  line-height: 1.65;
+}
+
+/* Contact — large tap targets */
+.site--mobile .contact__inner {
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.site--mobile .contact__panel {
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  padding: 1.25rem 1.1rem 1.2rem;
+  background: color-mix(in srgb, var(--paper) 75%, #fff);
+  border-top-style: solid;
+}
+
+.site--mobile .contact__email,
+.site--mobile .contact__phone {
+  display: block;
+  word-break: break-word;
+}
+
+.site--mobile .contact__email {
+  font-size: 1.35rem;
+  margin-bottom: 0.55rem;
+}
+
+.site--mobile .contact__phone {
+  font-size: 1.2rem;
+  color: var(--ink);
+  margin-bottom: 0.85rem;
+}
+
+.site--mobile .contact__links {
+  gap: 0.75rem;
+}
+
+.site--mobile .contact__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper) 60%, #fff);
+}
+
+/* Footer */
+.site--mobile .site-footer {
+  padding: 1.25rem var(--gutter) calc(1.5rem + env(safe-area-inset-bottom, 0px));
+}
+
+.site--mobile .site-footer__inner {
+  flex-direction: column;
+  gap: 0.35rem;
+}

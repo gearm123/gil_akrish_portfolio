@@ -25,9 +25,3 @@
   color: var(--ink-soft);
   max-width: 28rem;
 }
-
-@media (max-width: 720px) {
-  .capabilities__list {
-    grid-template-columns: 1fr;
-  }
-}

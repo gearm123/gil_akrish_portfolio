@@ -17,7 +17,22 @@
   font-weight: 600;
   letter-spacing: -0.03em;
   text-decoration: none;
+  margin-bottom: 0.45rem;
+}
+
+.contact__phone {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2.4vw, 1.35rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  color: var(--ink-soft);
   margin-bottom: 0.65rem;
+}
+
+.contact__phone:hover {
+  color: var(--accent);
 }
 
 .contact__meta {
@@ -41,10 +56,4 @@
 
 .contact__links a:hover {
   color: var(--accent);
-}
-
-@media (max-width: 800px) {
-  .contact__inner {
-    grid-template-columns: 1fr;
-  }
 }

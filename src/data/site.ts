@@ -51,7 +51,9 @@ export const site = {
     'Software engineer focused on mobile systems, secure product integrations, and modern web frontends.',
   intro:
     'From Android tooling and shipped mobile apps to React client work — building reliable software across the stack.',
-  email: 'hello@gilakrish.com', // PLACEHOLDER
+  email: 'gearm1234@gmail.com',
+  phone: '+972528896655',
+  phoneHref: 'tel:+972528896655',
   location: 'Tel Aviv District, Israel',
   links: {
     github: 'https://github.com/gearm123',

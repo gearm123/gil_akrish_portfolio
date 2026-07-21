@@ -15,8 +15,7 @@ export default function ContactSection() {
             Let’s talk about the next build
           </h2>
           <p className="section__lead">
-            Prefer email for project inquiries. Social links will be wired once
-            you share GitHub and LinkedIn.
+            Reach out by email or phone for project inquiries.
           </p>
         </div>
 
@@ -24,13 +23,20 @@ export default function ContactSection() {
           <a className="contact__email" href={`mailto:${site.email}`}>
             {site.email}
           </a>
+          <a className="contact__phone" href={site.phoneHref}>
+            {site.phone}
+          </a>
           <p className="contact__meta">{site.location}</p>
           <ul className="contact__links">
             <li>
-              <a href={site.links.github}>GitHub</a>
+              <a href={site.links.github} target="_blank" rel="noreferrer">
+                GitHub
+              </a>
             </li>
             <li>
-              <a href={site.links.linkedin}>LinkedIn</a>
+              <a href={site.links.linkedin} target="_blank" rel="noreferrer">
+                LinkedIn
+              </a>
             </li>
           </ul>
         </div>

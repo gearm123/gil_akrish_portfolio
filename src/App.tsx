@@ -7,11 +7,16 @@ import CapabilitiesSection from './components/CapabilitiesSection'
 import ApproachSection from './components/ApproachSection'
 import ContactSection from './components/ContactSection'
 import SiteFooter from './components/SiteFooter'
+import { useViewport } from './hooks/useViewport'
 import './App.css'
+import './styles/desktop.css'
+import './styles/mobile.css'
 
 export default function App() {
+  const viewport = useViewport()
+
   return (
-    <div className="site">
+    <div className={`site site--${viewport}`}>
       <SiteHeader />
       <main>
         <Hero />

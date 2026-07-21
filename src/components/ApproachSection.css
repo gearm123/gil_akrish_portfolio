@@ -26,9 +26,3 @@
   color: color-mix(in srgb, var(--paper) 88%, transparent);
   max-width: 36rem;
 }
-
-@media (max-width: 800px) {
-  .approach__inner {
-    grid-template-columns: 1fr;
-  }
-}
