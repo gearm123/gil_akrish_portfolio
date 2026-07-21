@@ -1,0 +1,76 @@
+.education__list {
+  list-style: none;
+  margin: 2.75rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.education__item {
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.education__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.25rem;
+  margin-bottom: 0.4rem;
+}
+
+.education__head h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.4vw, 1.6rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.education__dates {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.education__degree {
+  margin: 0 0 0.35rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.education__meta {
+  margin: 0 0 0.75rem;
+  font-size: 0.92rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.education__details {
+  margin: 0;
+  padding-inline-start: 1.15rem;
+  max-width: 46rem;
+  color: var(--ink-soft);
+}
+
+.education__details li + li {
+  margin-top: 0.35rem;
+}
+
+.education__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.75rem;
+  list-style: none;
+  margin: 0.9rem 0 0;
+  padding: 0;
+}
+
+.education__skills li {
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
