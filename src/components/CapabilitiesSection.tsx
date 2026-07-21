@@ -14,8 +14,8 @@ export default function CapabilitiesSection() {
           What I can take on
         </h2>
         <p className="section__lead">
-          Drawn from shipped roles across mobile, security-minded integrations,
-          systems tooling, and web delivery.
+          From model training in medical imaging research to shipping production
+          apps and frontends.
         </p>
 
         <ul className="capabilities__list">

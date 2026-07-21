@@ -73,6 +73,15 @@
   opacity: 0.85;
 }
 
+/* Research */
+.site--mobile .research__thesis {
+  font-size: 1.15rem;
+}
+
+.site--mobile .research__summary {
+  font-size: 0.98rem;
+}
+
 /* Experience as soft panels */
 .site--mobile .experience__list {
   gap: 1.15rem;

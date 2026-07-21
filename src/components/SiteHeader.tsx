@@ -4,6 +4,7 @@ import { useViewport } from '../hooks/useViewport'
 import './SiteHeader.css'
 
 const nav = [
+  { href: '#research', label: 'Research' },
   { href: '#experience', label: 'Experience' },
   { href: '#education', label: 'Education' },
   { href: '#work', label: 'Side quests' },

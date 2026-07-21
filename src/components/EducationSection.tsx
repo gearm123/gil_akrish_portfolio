@@ -14,8 +14,8 @@ export default function EducationSection() {
           Academic background
         </h2>
         <p className="section__lead">
-          Formal training in computer engineering and electrical engineering,
-          including graduate research in medical image analysis.
+          Graduate AI research at Tel Aviv University, grounded in a computer
+          engineering foundation from Bar-Ilan.
         </p>
 
         <ul className="education__list">

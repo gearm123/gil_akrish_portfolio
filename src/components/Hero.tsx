@@ -11,18 +11,18 @@ export default function Hero() {
       </div>
 
       <div className="hero__content">
-        <p className="hero__kicker">Software engineer · Israel</p>
+        <p className="hero__kicker">Software engineer · AI researcher</p>
         <h1 id="hero-name" className="hero__name">
           {site.name}
         </h1>
         <p className="hero__tagline">{site.tagline}</p>
         <p className="hero__intro">{site.intro}</p>
         <div className="hero__actions">
-          <a className="hero__cta hero__cta--primary" href="#experience">
-            View experience
+          <a className="hero__cta hero__cta--primary" href="#research">
+            View research
           </a>
-          <a className="hero__cta hero__cta--ghost" href="#contact">
-            Get in touch
+          <a className="hero__cta hero__cta--ghost" href="#experience">
+            Work experience
           </a>
         </div>
       </div>

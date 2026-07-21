@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#eef1f0"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#g)"/>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d9e4e1"/>
+      <stop offset="0.55" stop-color="#eef1f0"/>
+      <stop offset="1" stop-color="#d5ddd9"/>
+    </linearGradient>
+  </defs>
+  <text x="96" y="270" fill="#14181c" font-family="Georgia, serif" font-size="92" font-weight="700">Gil Akrish</text>
+  <text x="96" y="340" fill="#0b6e6a" font-family="Arial, sans-serif" font-size="34" font-weight="600">Software Engineer &amp; AI Researcher</text>
+  <text x="96" y="400" fill="#5f6a66" font-family="Arial, sans-serif" font-size="26">Deep learning · Histopathology · Mobile &amp; web</text>
+</svg>

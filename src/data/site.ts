@@ -48,9 +48,9 @@ export type EducationEntry = {
 export const site = {
   name: 'Gil Akrish',
   tagline:
-    'Software engineer focused on mobile systems, secure product integrations, and modern web frontends.',
+    'Software engineer and AI researcher — deep learning for medical imaging, plus production mobile and web systems.',
   intro:
-    'From Android tooling and shipped mobile apps to React client work — building reliable software across the stack.',
+    'Graduate research at Tel Aviv University on histopathology segmentation, alongside years of shipping Android, iOS, and React products.',
   email: 'gearm1234@gmail.com',
   phone: '+972528896655',
   phoneHref: 'tel:+972528896655',
@@ -59,6 +59,27 @@ export const site = {
     github: 'https://github.com/gearm123',
     linkedin: 'https://www.linkedin.com/in/gil-akrish-621b1b160/',
   },
+}
+
+/** Featured research — TAU thesis */
+export const research = {
+  school: 'Tel Aviv University',
+  degree: 'M.Sc., Electrical and Electronics Engineering',
+  title: 'Deep learning for histopathology',
+  thesisTitle:
+    'Deep learning–based segmentation of oral cavity squamous cell carcinoma in histopathology images',
+  status: 'Accepted with minor revisions to Histopathology',
+  summary:
+    'Graduate research focused on training and evaluating deep learning models for medical image analysis — specifically segmenting oral cavity squamous cell carcinoma (and related pathology cues) in histopathology slides. The work centers on practical model training, transfer learning, and clinically meaningful segmentation quality.',
+  methods: [
+    'Deep learning',
+    'Attention U-Net',
+    'Transfer learning',
+    'Medical image segmentation',
+    'Histopathology',
+  ],
+  repoUrl:
+    'https://github.com/gearm123/Attention_Unet_transfer_learning_CK_reduction',
 }
 
 /** Side projects & builds — lighter tone than experience */
@@ -244,8 +265,10 @@ export const education: EducationEntry[] = [
     degree: 'M.Sc., Electrical and Electronics Engineering',
     grade: 'GPA 91',
     details: [
-      'Thesis accepted with minor revisions to Histopathology: Deep learning–based segmentation of oral cavity squamous cell carcinoma in histopathology images.',
+      'Thesis (accepted with minor revisions to Histopathology): Deep learning–based segmentation of oral cavity squamous cell carcinoma in histopathology images.',
+      'Research focus: training deep learning segmentation models for medical histopathology, including Attention U-Net and transfer-learning pipelines.',
     ],
+    skills: ['Deep Learning', 'Attention U-Net', 'Histopathology', 'Transfer Learning'],
   },
   {
     id: 'biu',
@@ -262,6 +285,12 @@ export const education: EducationEntry[] = [
 ]
 
 export const capabilities: Capability[] = [
+  {
+    id: 'ai-research',
+    title: 'AI training & research',
+    description:
+      'Deep learning for medical imaging — model training, transfer learning, and histopathology segmentation from M.Sc. research at Tel Aviv University.',
+  },
   {
     id: 'mobile',
     title: 'Mobile apps',
@@ -280,15 +309,9 @@ export const capabilities: Capability[] = [
     description:
       'React applications for client products and platform integrations, from real-estate sites to Docs and Zoom workflows.',
   },
-  {
-    id: 'systems-tooling',
-    title: 'Systems & tooling',
-    description:
-      'Deep Android UI analysis, SMALI-level tooling, embedded software, and instrumentation for testing environments.',
-  },
 ]
 
 export const approach = {
   title: 'How I work',
-  body: 'I take ownership from architecture through shipping — whether that means leading a mobile team, reverse-engineering a framework to build better tools, or delivering a client frontend end to end. Clear decisions, secure defaults, and software that holds up in production.',
+  body: 'I move between research and product: training models carefully when the problem needs it, and shipping reliable mobile and web systems when the job is delivery. Clear decisions, measurable results, and software that holds up outside the lab.',
 }
