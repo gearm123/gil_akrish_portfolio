@@ -15,7 +15,8 @@ export default function ContactSection() {
             Let’s talk about the next build
           </h2>
           <p className="section__lead">
-            Reach out by email or phone for project inquiries.
+            Reach out by email or phone for project inquiries — or contact my
+            manager, {site.manager.name}.
           </p>
         </div>
 
@@ -27,6 +28,18 @@ export default function ContactSection() {
             {site.phone}
           </a>
           <p className="contact__meta">{site.location}</p>
+
+          <div className="contact__manager">
+            <p className="contact__manager-label">{site.manager.title}</p>
+            <p className="contact__manager-name">{site.manager.name}</p>
+            <a
+              className="contact__manager-email"
+              href={`mailto:${site.manager.email}`}
+            >
+              {site.manager.email}
+            </a>
+          </div>
+
           <ul className="contact__links">
             <li>
               <a href={site.links.github} target="_blank" rel="noreferrer">

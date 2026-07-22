@@ -55,6 +55,11 @@ export const site = {
   phone: '+972528896655',
   phoneHref: 'tel:+972528896655',
   location: 'Tel Aviv District, Israel',
+  manager: {
+    name: 'Shelly Politi',
+    title: 'Manager',
+    email: 'Shellypoliti67@gmail.com',
+  },
   links: {
     github: 'https://github.com/gearm123',
     linkedin: 'https://www.linkedin.com/in/gil-akrish-621b1b160/',
