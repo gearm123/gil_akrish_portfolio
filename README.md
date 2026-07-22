@@ -27,13 +27,13 @@ On every production build:
 
 ## Netlify + Analytics
 
-In Netlify → Site settings → Environment variables:
+Google Analytics (`G-368TRC88WM`) is embedded in `index.html`.
+
+Optional Netlify env vars:
 
 | Variable | Example |
 |----------|---------|
 | `VITE_SITE_URL` | `https://your-domain.com` |
-| `VITE_GA_MEASUREMENT_ID` | `G-XXXXXXXXXX` |
-
-Then redeploy. GA loads only when the measurement ID is set.
+| `VITE_GA_MEASUREMENT_ID` | override only if you change GA properties |
 
 After go-live: submit `https://your-domain.com/sitemap.xml` in Google Search Console.

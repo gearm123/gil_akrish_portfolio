@@ -2,10 +2,11 @@
  * Site-wide SEO and analytics config.
  * Set in Netlify (Site settings → Environment variables):
  *   VITE_SITE_URL=https://your-domain.com
- *   VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+ *   VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX  (optional override)
  */
 
 const DEFAULT_SITE_URL = 'https://gilakrish.com'
+const DEFAULT_GA_MEASUREMENT_ID = 'G-368TRC88WM'
 
 export function getSiteUrl(): string {
   const raw = import.meta.env.VITE_SITE_URL as string | undefined
@@ -13,8 +14,8 @@ export function getSiteUrl(): string {
 }
 
 export function getGoogleAnalyticsId(): string | undefined {
-  const id = (import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined)?.trim()
-  return id || undefined
+  const fromEnv = (import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined)?.trim()
+  return fromEnv || DEFAULT_GA_MEASUREMENT_ID
 }
 
 export function toAbsoluteUrl(path: string): string {

@@ -7,14 +7,19 @@ declare global {
   }
 }
 
-let loadedId: string | undefined
-
-/** Loads GA4 when VITE_GA_MEASUREMENT_ID is set at build time. */
+/**
+ * Google tag is embedded in index.html (G-368TRC88WM).
+ * This helper only avoids a second injection if something calls init again.
+ */
 export function initGoogleAnalytics(): void {
   const id = getGoogleAnalyticsId()
-  if (!id || loadedId === id || typeof document === 'undefined') return
+  if (!id || typeof document === 'undefined') return
 
-  loadedId = id
+  const alreadyLoaded = document.querySelector(
+    `script[src*="googletagmanager.com/gtag/js?id=${id}"]`,
+  )
+  if (alreadyLoaded || typeof window.gtag === 'function') return
+
   window.dataLayer = window.dataLayer || []
   window.gtag = function gtag(...args: unknown[]) {
     window.dataLayer?.push(args)
